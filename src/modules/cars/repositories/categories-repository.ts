@@ -5,7 +5,7 @@ import {
 } from '~/modules/cars'
 
 class CategoriesRepository implements ICategoriesRepository {
-  categories: Category[] = []
+  private categories: Category[] = []
 
   constructor() {
     this.categories = []
