@@ -1,5 +1,4 @@
-import { CategoryParams } from '~/models'
-import { CategoriesRepository } from '~/repositories'
+import { CategoryParams, CategoriesRepository } from '~/modules/cars'
 
 class CreateCategoryService {
   private categoriesRepository: CategoriesRepository

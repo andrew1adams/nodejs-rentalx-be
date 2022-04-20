@@ -1,13 +1,17 @@
-import { Category, CategoryParams } from '~/models'
+import {
+  Category,
+  ICategoriesRepository,
+  ICategoriesRepositoryParams
+} from '~/modules/cars'
 
-class CategoriesRepository {
+class CategoriesRepository implements ICategoriesRepository {
   categories: Category[] = []
 
   constructor() {
     this.categories = []
   }
 
-  create({ name, description }: CategoryParams) {
+  create({ name, description }: ICategoriesRepositoryParams) {
     const category = new Category({ name, description })
 
     this.categories.push(category)
