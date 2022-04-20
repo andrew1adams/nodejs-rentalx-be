@@ -1,4 +1,4 @@
-# Node JS - Clean Seed
+# Node JS - [Seeded](https://github.com/andrew1adams/nodejs-seed-be)
 
 Nesse projeto temos um template de uma aplicação NodeJS com algumas configurações básicas. Configurações que facilitarão o desenvolvimento do projeto, e trarão melhor qualidade pro código padronizando-o e padronizando também os commits que subirão para o repositório remoto.
 
