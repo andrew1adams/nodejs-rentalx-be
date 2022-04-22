@@ -3,7 +3,7 @@ import {
   ISpecificationsRepository
 } from '~/modules/cars'
 
-class CreateSpecificationService {
+class CreateSpecificationUseCase {
   private specificationsRepository: ISpecificationsRepository
 
   constructor(specificationsRepository: ISpecificationsRepository) {
@@ -21,4 +21,4 @@ class CreateSpecificationService {
   }
 }
 
-export { CreateSpecificationService }
+export { CreateSpecificationUseCase }
