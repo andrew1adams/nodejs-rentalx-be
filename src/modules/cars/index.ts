@@ -1,10 +1,11 @@
 export * from './models/category'
 export * from './models/specification'
 
-export * from './repositories/categories-repository'
-export * from './repositories/specifications-repository'
-export * from './repositories/categories-repository-interface'
-export * from './repositories/specifications-repository-interface'
+export * from './repositories/implementations/categories-repository'
+export * from './repositories/implementations/specifications-repository'
+
+export * from './repositories/interfaces/categories-repository-interface'
+export * from './repositories/interfaces/specifications-repository-interface'
 
 export * from './services/create-specification-service'
 
