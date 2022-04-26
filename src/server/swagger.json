@@ -3,6 +3,81 @@
   "info": {
     "title": "Rental-X Documentation",
     "description": "This is an API REST Rent",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "contact": {
+      "name": "Rental-X BE",
+      "url": "https://github.com/andrew1adams/nodejs-rentalx-be",
+      "email": "andreewb02@gmail.com"
+    }
+  },
+  "paths": {
+    "/categories": {
+      "post": {
+        "tags": ["Categories"],
+        "summary": "Create a category",
+        "description": "Create a new category",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Cars"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "Cars for rent"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Category created"
+          },
+          "500": {
+            "description": "Category already exists"
+          }
+        }
+      },
+      "get": {
+        "tags": ["Categories"],
+        "summary": "Get all categories",
+        "description": "Get all categories",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "example": "Cars"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Cars for rent"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Categories not found"
+          }
+        }
+
+      }
+    }
   }
 }
