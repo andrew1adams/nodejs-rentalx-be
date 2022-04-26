@@ -18,3 +18,7 @@ export * from './use-cases/list-categories/list-categories'
 export * from './use-cases/create-specification/create-specification-use-case'
 export * from './use-cases/create-specification/create-specification-controller'
 export * from './use-cases/create-specification/create-specification'
+
+export * from './use-cases/import-category/import-category-use-case'
+export * from './use-cases/import-category/import-category-controller'
+export * from './use-cases/import-category/import-category'
